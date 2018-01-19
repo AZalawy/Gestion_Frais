@@ -1,5 +1,5 @@
 dependencies:
   pre:
     - curl -fL https://getcli.jfrog.io | sh
-    - pecl install mongo
+#    - pecl install mongo
 
