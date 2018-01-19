@@ -7,6 +7,8 @@ jobs:
       - checkout
       - run: echo "A first hello"
       - run: sleep 25
+      # run tests!
+      - run: phpunit
   two:
     docker:
       - image: circleci/php:7.1.5-browsers
@@ -23,8 +25,7 @@ workflows:
       - one
       - two
       
-# run tests!
-      - run: phpunit
+
     
       
  
