@@ -3,7 +3,7 @@
 # Check https://circleci.com/docs/2.0/language-php/ for more details
 #
 version: 2
-jobs:
+build:
   one:
     docker:
       # specify the version you desire here
