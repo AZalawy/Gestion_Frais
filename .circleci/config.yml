@@ -18,7 +18,6 @@ jobs:
 
     steps:
       - checkout
-      - notacommand
 
       # Download and cache dependencies
       - restore_cache:
