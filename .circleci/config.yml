@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  one:
     docker:
       # specify the version you desire here
       - image: circleci/php:7.1.5-browsers
@@ -36,7 +36,7 @@ jobs:
       
       
       #duplicate 
-       build:
+       two:
     docker:
       # specify the version you desire here
       - image: circleci/php:7.1.5-browsers
