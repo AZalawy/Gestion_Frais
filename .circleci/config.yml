@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/php:7.1.5-browsers
     steps:
       - checkout
       - run: echo "A first hello"
