@@ -1,0 +1,3 @@
+dependencies:
+  pre:
+    - curl -fL https://getcli.jfrog.io | sh
