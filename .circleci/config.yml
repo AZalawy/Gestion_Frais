@@ -19,4 +19,4 @@ jobs:
             - ./vendor
           key: v1-dependencies-
       # run tests!
-      - run: vendor/bin/phpunit
+      - run: vendor/phpunit
