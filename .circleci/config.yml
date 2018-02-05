@@ -16,7 +16,7 @@ jobs:
 
       - save_cache:
           paths:
-            - vendor/bin/phpunit
+            -./vendor/bin/phpunit
           key: v1-dependencies-
       # run tests!
       - run: phpunit
