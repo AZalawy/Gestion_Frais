@@ -19,5 +19,4 @@ jobs:
             - ./vendor
           key: v1-dependencies-
       # run tests!
-      - run: 
-        command: composer --version
+      - run: phpunit
