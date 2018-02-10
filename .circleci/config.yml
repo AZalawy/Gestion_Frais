@@ -19,4 +19,4 @@ jobs:
             - ./
           key: v1-dependencies-
       # run tests!
-      - run: xampp/php/phpunit
+      - run: xampp/php/
