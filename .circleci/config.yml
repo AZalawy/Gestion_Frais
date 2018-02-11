@@ -6,17 +6,12 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
-      - image: circleci/php:7.0-node-browsers
-
-    working_directory: ~/repo
-
+      - image: circleci/php:7.1-browsers
     steps:
       - checkout
-
-      - save_cache:
-          paths:
-            - ./vendor
-          key: v1-dependencies-
-      # run tests!
-      - run: ./vendor/bin/phpunit
+      - run:
+          name: "Check Docker"
+          command: echo "Hi"
+      - run:
+          name: "Check Docker"
+          command: composer --version
