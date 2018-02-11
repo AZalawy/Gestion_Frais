@@ -31,8 +31,3 @@ jobs:
         
       # run tests!
       - run: phpunit
-      
-     test:
-	     override:
-	      #- phpunit test/unit-tests
-	      - phpunit --configuration filename.xml
