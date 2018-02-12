@@ -26,3 +26,6 @@ jobs:
         
       # run tests!
       - run: ./vendor/bin/phpunit
+
+  docker:
+    require-dev: { phpunit/phpunit: 7.1.5 }
