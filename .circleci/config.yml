@@ -24,7 +24,7 @@ jobs:
           - v1-dependencies-
 
       - save_cache:
-          paths : ./phpunit.php
+          paths : ./phpunit
           key: v1-dependencies-
         
       # run tests!
