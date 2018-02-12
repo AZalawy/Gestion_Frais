@@ -25,8 +25,8 @@ jobs:
           - v1-dependencies-
 
       - save_cache:
-          paths : xampp/php/
+          paths : ./vendor
           key: v1-dependencies-
         
       # run tests!
-      - run: xampp/php/phpunit
+      - run: ./vendor/bin/phpunit
