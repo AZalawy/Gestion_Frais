@@ -23,7 +23,7 @@ if (version_compare('7.1.2', PHP_VERSION, '>')) {
 if (!ini_get('date.timezone')) {
     ini_set('date.timezone', 'UTC');
 }
-foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
+foreach (array(__DIR__ . '/../../autoload-classmap.php', __DIR__ . '/../../autoload_files.php', __DIR__ . '/../../autoload_namespaces.php', __DIR__ . '/../../autoload_psr4.php', __DIR__ . '/../vendor/autoload_real.php', __DIR__ . '/vendor/autoload_static.php') as $file) {
     if (file_exists($file)) {
         define('PHPUNIT_COMPOSER_INSTALL', $file);
         break;
