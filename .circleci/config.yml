@@ -13,7 +13,7 @@ jobs:
     working_directory: ~/repo
     
     require : 
-      - composer/composer : phpunit/phpunit --dev
+      - composer/composer : phpunit/phpunit=7.1.5
 
     steps:
       - checkout
