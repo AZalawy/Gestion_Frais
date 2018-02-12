@@ -27,6 +27,7 @@ jobs:
           paths : ./phpunit
           key: v1-dependencies-
         
-      # run tests!
-      - run: ./phpunit.php
+     test_script:
+      - cd c:\phpunit
+      - php phpunit
 
