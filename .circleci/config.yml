@@ -15,8 +15,7 @@ jobs:
     require : 
       - composer/composer : phpunit/phpunit=7.1.5
 
-    steps:
-      - checkout
+
 
       # Download and cache dependencies
       - restore_cache:
